@@ -72,3 +72,69 @@ footer{border-top:1px solid var(--line);padding:25px 24px;display:flex;justify-c
 @media(max-width:850px){.hero,.split{grid-template-columns:1fr}.hero{padding-top:65px}.hero-art{min-height:300px}.hero-art img{height:220px}.stats{grid-template-columns:repeat(2,1fr)}.roadmap-grid{grid-template-columns:1fr}.split{gap:25px}.section,.closing{padding-top:70px;padding-bottom:70px}}
 @media(max-width:570px){.site-header{align-items:flex-start;flex-direction:column;gap:12px;padding:12px 18px}nav{gap:16px}nav a{font-size:12px}.hero,.section,.closing{padding-left:18px;padding-right:18px}h1{letter-spacing:-1.5px}.stats{gap:10px}.stat{padding:18px}.stat strong{font-size:29px}.hero-art{min-height:270px}.hero-art img{height:190px}.roadmap-card{min-height:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+
+
+/* FIREHOUSE CHART SHOWCASE */
+.chart-showcase-card {
+  overflow: hidden;
+  background: #10192d;
+  border: 1px solid rgba(111,159,227,.25);
+  border-radius: 20px;
+  box-shadow: 0 18px 55px rgba(0,0,0,.22);
+}
+.chart-showcase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 28px;
+}
+.chart-showcase-header h3 {
+  margin: 0 0 8px;
+}
+.chart-showcase-header p {
+  margin: 0;
+  color: #a9bbd6;
+}
+.chart-showcase-badge {
+  padding: 8px 12px;
+  border: 1px solid #456a9a;
+  border-radius: 999px;
+  color: #b8d6ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+.chart-showcase-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.chart-showcase-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 20px 28px 8px;
+  color: #d9e6fb;
+  font-size: 14px;
+}
+.chart-showcase-disclaimer {
+  margin: 0;
+  padding: 8px 28px 24px;
+  color: #8fa3c3;
+  font-size: 12px;
+  line-height: 1.6;
+}
+@media (max-width: 640px) {
+  .chart-showcase-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .chart-showcase-footer {
+    padding: 18px 20px 8px;
+  }
+  .chart-showcase-disclaimer {
+    padding: 8px 20px 20px;
+  }
+}
