@@ -1,3 +1,6 @@
 .chart-venv/
 assets/firehouse-demo-chart.html
 assets/firehouse-demo-chart.json
+
+# Local website backups
+*.before-nightwatch-*
